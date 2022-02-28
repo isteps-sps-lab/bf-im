@@ -1,10 +1,6 @@
 # Intervention Manager (IM)
 
-<!-- This document provides a user manual for the *Intervention Manager* service,
-which supports the operator in better and most fruitfully interacting with the
-workplace. The Intervention Manager serves as a decision-maker, placed on top of
-other engines to drive the definition of the best system configuration, for a
-specific time frame, possibly to increase human well-being. -->
+The *im* component allows users to easily define intervention rules to orchestrate a production system. The component monitors the status of the worker-factory ecosystem in real-time, by elaborating data from sensors, machines, workers monitoring systems, ERP, and more. The set of intervention rules are known to the *im*, which decides which is the best one to trigger.
 
 ## Contents
 
@@ -20,14 +16,6 @@ specific time frame, possibly to increase human well-being. -->
 - [Changelog](#changelog)
     - [v0.1](#v01)
 - [Authors](#authors)
-
-<!-- ## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit. -->
-
 
 ## Acknowledgement
 
