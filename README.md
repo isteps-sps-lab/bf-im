@@ -17,9 +17,9 @@ docker-compose up -d
 ```
 
 The IM is now available at [localhost:8666](http://localhost:8666). You can use
-the IM UI to edit the possible interventions available for the factory (find out
-how to use the UI in the [User Manual](./usermanual.md)). The intervention will
-be triggered by the IM and written to the *middleware* component.
+the IM UI to edit the possible interventions available for the factory. The
+intervention will be triggered by the IM and written to the *middleware*
+component.
 
 Also, Kafka is accessible from the Kafka Development Environment, which is
 available at [localhost:3040](http://localhost:3040/). Here you can check

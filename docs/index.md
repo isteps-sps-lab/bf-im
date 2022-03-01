@@ -13,7 +13,7 @@ rules are known to the *im*, which decides which is the best one to trigger.
 - User & Programmers Manual
     - [Architecture](architecture.md)
     - [API](api.md)
-    - [User Guide](usermanual.md)
+    - [User Manual](usermanual.md)
 - Installation & Administration Manual
     - [Installation Guide](installationguide.md)
 - [Acknowledgement](#acknowledgement)
