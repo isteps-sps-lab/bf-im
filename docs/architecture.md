@@ -3,7 +3,27 @@
 Within the Better Factory project, the *im* is deployed as part of the Cognitive Human Robot Interaction (C-HRI) scenario.
 The deployment is based on Docker Compose, and the set of initialized components is depicted in the picture here below:
 
-![docker-deployment](./img/docker-deployment.png)
+``` mermaid
+flowchart LR
+    classDef supsi fill:#B4C7DC;
+    classDef pub fill:#B2B2B2
+    classDef pvt fill:#E8F2A1
+
+    subgraph SUPSI
+    direction TB
+    im:::supsi <--> middleware:::supsi
+    kafka-message-model:::supsi --> middleware:::supsi
+    end
+
+    subgraph Private Deps
+    models:::pvt <--> im:::supsi
+    end
+
+    subgraph Public Deps
+    models:::pvt <--> models-db:::pub
+    end
+
+```
 
 The blue-colored components represent the core components for which SUPSI provides and maintains a Docker image; the other components (grey- and green-colored) represent dependencies that are provided as Docker images by third parties.
 
@@ -24,7 +44,7 @@ The middleware is run in secure mode and can be accessed at [localhost:3040](loc
 This component embeds the data model shared within the Better Factory project. The data model is automatically uploaded to the Schema Registry available within the *middleware*.
 
 ### models
-The *models* component exposes a REST API to access the data model shared among all the components involved in the C-HRI scenario. The API is accessed by both the *fams* and *im* components to fetch information about workers and other factory elements.
+The *models* component exposes a REST API to access the data model shared among all the components involved in the C-HRI scenario. The API is accessed by the *im* to fetch information about workers and other factory elements.
 
 !!! important
     This image is available in a private Docker registry hosted at GitLab. Please ask HOLONIX to get access to this image.
