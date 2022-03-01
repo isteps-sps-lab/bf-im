@@ -50,6 +50,6 @@ You can now access different components:
 
 ## Software Maintainers
 
-- Vincenzo Cutrona - vincenzo.cutrona@supsi.ch
-- Niko Bonomi - niko.bonomi@supsi.ch
-- Giuseppe Landolfi - giuseppe.landolfi@supsi.ch
+- Vincenzo Cutrona - <vincenzo.cutrona@supsi.ch>
+- Niko Bonomi - <niko.bonomi@supsi.ch>
+- Giuseppe Landolfi - <giuseppe.landolfi@supsi.ch>

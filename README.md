@@ -26,19 +26,18 @@ available at [localhost:3040](http://localhost:3040/). Here you can check
 schemas uploaded to the Schema Registry, as well as existing Kafka topics and
 their content.
 
+## Software Details
+
+* Documentation: https://isteps-sps-lab.github.io/bf-im/
+
+## Maintainers
+
+- Vincenzo Cutrona - <vincenzo.cutrona@supsi.ch>
+- Niko Bonomi - <niko.bonomi@supsi.ch>
+- Giuseppe Landolfi - <giuseppe.landolfi@supsi.ch>
 
 ## Acknowledgement
 
 H2020 Innovation Action -- This project has received funding from the
 European Union's Horizon 2020 research and innovation programme under
 grant agreement No 951813.
-
-
-## Maintainers
-
-* Vincenzo Cutrona - vincenzo.cutrona@supsi.ch
-* Niko Bonomi - niko.bonomi@supsi.ch
-* Giuseppe Landolfi - giuseppe.landolfi@supsi.ch
-
-## Software Details
-* Documentation: https://isteps-sps-lab.github.io/bf-im/.
