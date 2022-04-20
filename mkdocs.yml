@@ -31,12 +31,12 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-pages:
+nav:
   - Home: 'index.md'
   - 'Getting Started' : 'getting-started.md'
   - 'User & Programmers Manual':
     - 'Architecture' : 'architecture.md'
-    - 'API' : 'api.md'
+    # - 'API' : 'api.md'
     - 'User Manual': 'usermanual.md'
   - 'Installation & Administration Manual':
     - 'Installation Guide': 'installationguide.md'

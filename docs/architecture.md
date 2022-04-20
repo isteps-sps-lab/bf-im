@@ -1,6 +1,6 @@
 # Architecture
 
-Within the Better Factory project, the *im* is deployed as part of the Cognitive Human Robot Interaction (C-HRI) scenario.
+Within the Better Factory project, the IM is deployed as part of the Cognitive Human Robot Interaction (C-HRI) scenario.
 The deployment is based on Docker Compose, and the set of initialized components is depicted in the picture here below:
 
 ``` mermaid
@@ -44,7 +44,7 @@ The middleware is run in secure mode and can be accessed at [localhost:3040](loc
 This component embeds the data model shared within the Better Factory project. The data model is automatically uploaded to the Schema Registry available within the *middleware*.
 
 ### models
-The *models* component exposes a REST API to access the data model shared among all the components involved in the C-HRI scenario. The API is accessed by the *im* to fetch information about workers and other factory elements.
+The *models* component exposes a REST API to access the data model shared among all the components involved in the C-HRI scenario. The API is accessed by the IM to fetch information about workers and other factory elements.
 
 !!! important
     This image is available in a private Docker registry hosted at GitLab. Please ask HOLONIX to get access to this image.

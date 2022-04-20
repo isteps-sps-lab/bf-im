@@ -1,10 +1,10 @@
 # Intervention Manager (IM)
 
-The *im* component allows users to easily define intervention rules to
+The IM component allows users to easily define intervention rules to
 orchestrate a production system. The component monitors the status of the
 worker-factory ecosystem in real-time, by elaborating data from sensors,
 machines, workers monitoring systems, ERP, and more. The set of intervention
-rules are known to the *im*, which decides which is the best one to trigger.
+rules are known to the IM, which decides which is the best one to trigger.
 
 ## Getting Started
 
@@ -28,7 +28,7 @@ their content.
 
 ## Software Details
 
-* Documentation: https://isteps-sps-lab.github.io/bf-im/
+- Documentation: https://isteps-sps-lab.github.io/bf-im/
 
 ## Maintainers
 
