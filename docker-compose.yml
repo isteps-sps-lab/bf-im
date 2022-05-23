@@ -98,6 +98,10 @@ services:
     volumes:
       - models_db_data:/var/lib/mysql:rw
 
+networks:
+  default:
+    name: betterfactory_chri
+
 volumes:
   message_model:
   models_db_data:

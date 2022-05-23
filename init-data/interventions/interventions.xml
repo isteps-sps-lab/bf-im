@@ -1,36 +1,30 @@
 <interventionRepository>
    <interventions class="java.util.ArrayList">
-      <intervention effectiveness="100.0" id="64fb7593-93ab-4846-be2c-dcdcb54556a1" description="Assistance Level 0">
+      <intervention effectiveness="100.0" id="d81e6380-ef84-428f-8996-8876aceb26b9" description="demo intervention">
          <DynamicParameterInRangeCondition>
             <dynamicParameterName>Fatigue</dynamicParameterName>
-            <lowerBound>-1.0</lowerBound>
-            <upperBound>1.0</upperBound>
+            <lowerBound>5.0</lowerBound>
+            <upperBound>8.0</upperBound>
          </DynamicParameterInRangeCondition>
-         <command>Assistancelevel:0</command>
+         <DynamicParameterWindowRangeCondition>
+            <dynamicParameterName>EAWS Score</dynamicParameterName>
+            <lowerBound>70.0</lowerBound>
+            <upperBound>80.0</upperBound>
+            <aggregator_function>AVERAGE</aggregator_function>
+            <windowDuration>100000</windowDuration>
+         </DynamicParameterWindowRangeCondition>
+         <command>take a break</command>
       </intervention>
-      <intervention effectiveness="100.0" id="593bb704-55bc-461c-90fc-667c3dd5ad08" description="Assistance Level 1">
+      <intervention effectiveness="100.0" id="0c2d7a9a-1e37-47c2-9704-eed02161fca3" description="intervention 2">
          <DynamicParameterInRangeCondition>
-            <dynamicParameterName>Fatigue</dynamicParameterName>
-            <lowerBound>1.0</lowerBound>
-            <upperBound>1.5</upperBound>
+            <dynamicParameterName>EAWS Score</dynamicParameterName>
+            <lowerBound>100.0</lowerBound>
+            <upperBound>150.0</upperBound>
          </DynamicParameterInRangeCondition>
-         <command>Assistancelevel:1</command>
-      </intervention>
-      <intervention effectiveness="100.0" id="4d22aaaa-8535-439d-8384-aae48156fc8a" description="Simulate">
-         <DynamicParameterInRangeCondition>
-            <dynamicParameterName>Fatigue</dynamicParameterName>
-            <lowerBound>0.0</lowerBound>
-            <upperBound>10.0</upperBound>
-         </DynamicParameterInRangeCondition>
-         <command>execute</command>
-      </intervention>
-      <intervention effectiveness="100.0" id="aba97196-9fde-4d04-bd29-feb60583ed37" description="Break">
-         <DynamicParameterInRangeCondition>
-            <dynamicParameterName>Fatigue</dynamicParameterName>
-            <lowerBound>1.5</lowerBound>
-            <upperBound>2.5</upperBound>
-         </DynamicParameterInRangeCondition>
-         <command>Break</command>
+         <IsWorker>
+            <workerId>6090d8ff-c423-4ea9-9c1d-cff4bb818107</workerId>
+         </IsWorker>
+         <command>take a break</command>
       </intervention>
    </interventions>
 </interventionRepository>
