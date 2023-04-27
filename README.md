@@ -33,7 +33,6 @@ their content.
 ## Maintainers
 
 - Vincenzo Cutrona - <vincenzo.cutrona@supsi.ch>
-- Niko Bonomi - <niko.bonomi@supsi.ch>
 - Giuseppe Landolfi - <giuseppe.landolfi@supsi.ch>
 
 ## Acknowledgement
