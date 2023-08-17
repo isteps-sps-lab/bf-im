@@ -3,7 +3,7 @@ services:
 
   im:
     container_name: im
-    image: registry.gitlab.com/isteps-sps-lab/human-robot-interaction/better-factory/im:0.1
+    image: docker.ramp.eu/supsi-pvt/intervention-manager:0.1.9
     environment:
       DIGITAL_WORKPLACE_PASSWORD: $BF_PASSWORD
       DIGITAL_WORKPLACE_URL: http://models:8080/rest
@@ -26,14 +26,14 @@ services:
 
   kafka-message-model:
     container_name: kafka-message-model
-    image: registry.gitlab.com/isteps-sps-lab/human-robot-interaction/better-factory/kafka-message-model:0.1
+    image: docker.ramp.eu/supsi-pvt/kafka-message-model:0.1.0
     restart: on-failure
     volumes:
       - message_model:/schemas:rw
 
   middleware:
     container_name: middleware
-    image: registry.gitlab.com/isteps-sps-lab/human-robot-interaction/better-factory/middleware:0.1
+    image: docker.ramp.eu/supsi-pvt/middleware:0.1.1
     environment:
       ADV_HOST: middleware
       BROKER_PORT: 9092
@@ -54,7 +54,7 @@ services:
 
   models:
     container_name: models
-    image: registry.gitlab.com/complemant/integration/data-models:latest
+    image: docker.ramp.eu/betterfactory/data-models:1.0.0
     environment:
       ADMIN_PASSWORD: $BF_PASSWORD
       ADMIN_USERNAME: $BF_USER
@@ -70,7 +70,7 @@ services:
       MQTT_PORT: 1883
       MQTT_USER: $BF_USER
       MYSQL_DB: $MODELS_MYSQL_DATABASE
-      MYSQL_HOST: models_db
+      MYSQL_HOST: models-db
       MYSQL_PASS: $BF_PASSWORD
       MYSQL_PORT: 3306
       MYSQL_USER: $BF_USER
@@ -84,9 +84,9 @@ services:
       - ./init-data:/var/human/init-data:rw
     depends_on:
       - middleware
-      - models_db
+      - models-db
 
-  models_db:
+  models-db:
     container_name: models-db
     image: mysql:5.7
     environment:
